@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #e0e0e0;
+}
+
+header {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    height: 150px;
+}
+
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#hero {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #fff;
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #274c77;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #14274e;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.service {
+    background-color: #1b263b;
+    color: #e0e0e0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 45%;
+    text-align: center;
+}
+
+.service img {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.service p {
+    margin-bottom: 0;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.product {
+    background-color: #1b263b;
+    color: #e0e0e0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 45%;
+    text-align: center;
+}
+
+.product img {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.product p {
+    margin-bottom: 0;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #14274e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #0d1b2a;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #14274e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #0d1b2a;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+  
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+  
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-text {
+    text-align: left;
+}
+  
+.modal-text h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #000;
+}
+  
+.modal-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-radius: 4px;
+}
+
+#about {
+    background-color: #1b263b;
+    color: #fff;
+}
+
+#about .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.card {
+    background-color: #1b263b;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 2rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.scroll-animation {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+
+
+footer {
+    background-color: #1b263b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.whatsapp-icon img:hover {
+    transform: scale(1.2);
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-screen img {
+    width: 100px; /* Sesuaikan ukuran gambar loading */
+    height: 100px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    .services, .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .product {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+    }
+}

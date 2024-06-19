@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <title>Nelpix Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="images/loading.gif" alt="Loading...">
+    </div>
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/6285651106183" target="_blank">
+            <img src="images/wa.jpeg" alt="WhatsApp">
+        </a>
+    </div>
+    <header>
+        <nav>
+            <img src="images/logo-new.png" alt="Nelpix Tech Logo" class="logo">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="section">
+        <div class="container">
+            <h1 style="font-size: 3.5rem;">Nelpix Tech</h1>
+            <p style="font-size: 1.5rem;"> Leading AI solutions for your industry</p>
+            <button onclick="scrollToSection('services')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Welcome to Nelpix Tech</h1>
+            <p>Your partner in innovative AI solutions to develop your industrial business</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="services">
+                <div class="service">
+                    <img src="images/s3.png" alt="AI for Development">
+                    <h3>AI Development</h3>
+                    <p>This service offers AI development for business, health, finance, marketing and others.</p>
+                </div>
+                <div class="service">
+                    <img src="images/sellai.png" alt="AI for Sell">
+                    <h3>Sell AI</h3>
+                    <p>This service offers sales of AI models for business, health, finance, marketing and others.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <div class="container">
+            <h1>Our Products</h1>
+            <div class="product-categories">
+                <button onclick="filterProducts('health')">Health</button>
+                <button onclick="filterProducts('business')">Business</button>
+                <button onclick="filterProducts('finance')">Finance</button>
+            </div>
+            <div class="products">
+                <div class="product health">
+                    <img src="images/detection-tumor.png" alt="Product 1">
+                    <h3>AI Brain Tumor Detect</h3>
+                    <p>Brain Tumor Detection AI is created with the CNN algorithm. The aim of this AI is to detect brain tumors more quickly so that the treatment of patients whose brain tumors are detected can be handled.</p>
+                </div>
+                <div class="product health">
+                    <img src="images/lung-cancer-prediction.png" alt="Product 2">
+                    <h3>AI Lung Cancer Prediction</h3>
+                    <p>Lung Cancer Prediction AI is an AI that aims to predict lung cancer more quickly and efficiently so that cancer treatment can be treated early before it becomes malignant.</p>
+                    
+                </div>
+                <div class="product health">
+                    <img src="images/diabetes-prediction.png" alt="Product 3">
+                    <h3>AI Diabetes Prediction</h3>
+                    <p>AI Diabetes Prediction aims to help someone find out whether they have diabetes early so they can avoid more serious diabetes.</p>
+                    
+                </div>
+                <div class="product business">
+                    <img src="images/chatbot.jpeg" alt="Product 4">
+                    <h3>Chatbot Business</h3>
+                    <p>This chatbot is useful for providing fast customer service.</p>
+                </div>
+                <div class="product business">
+                    <img src="images/recommend-product.png" alt="Product 5">
+                    <h3>AI Recommend Product</h3>
+                    <p>
+                        AI This is to provide recommendations to users based on their preferences
+                    </p>
+                    
+                </div>
+                <div class="product business">
+                    <img src="images/AI-prediksi-laba.png" alt="Product 5">
+                    <h3>
+                        AI Predict Company Income</h3>
+                    <p>
+                        AI Prediction of a company's net profit is useful for knowing whether a company's financial condition will decline or increase in the future
+                    </p>
+                    
+                </div>
+                <div class="product finance">
+                    <img src="images/AI-Investment-Decision.png" alt="Product 6">
+                    <h3>AI Investment Decision</h3>
+                    <p>AI Investment Decision is AI to provide accurate investment decisions according to market conditions</p>
+                    
+                </div>
+                <div class="product finance">
+                    <img src="images/optimization-allocation-fi2.png" alt="Product 7">
+                    <h3>AI Optimization Portfolio</h3>
+                    <p>
+                        AI Portfolio Optimization is AI to optimize investor portfolios according to risk tolerance</p>
+                  
+                </div>
+                <div class="product finance">
+                    <img src="images/risk-credit.png" alt="Product 7">
+                    <h3>AI Credit Risk</h3>
+                    <p>IAI Risk Credit is AI that can measure a customer's credit risk, whether it is feasible or not
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Us</h1>
+            <div class="card">
+                <img src="images/a2.png" alt="AI for Medical">
+                <h3>Nelpix Tech</h3>
+                <p>
+                    Nelpix Tech is an agency company that specializes in artificial intelligence solutions tailored to your industry sector. We are committed to increasing efficiency and effectiveness through innovative technology, namely AI, which is tailored to your industry</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nelpix Tech. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61561341352616" target="_blank"><img src="images/fb.jpeg" alt="Facebook"></a>
+                <a href="https://www.tiktok.com/@nelpix.tech?lang=en" target="_blank"><img src="images/tiktok.jpeg" alt="Twitter"></a>
+                <a href="https://instagram.com/nelpixtech" target="_blank"><img src="images/ig.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
