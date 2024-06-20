@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalTitle = document.getElementById('modalTitle');
   const modalDescription = document.getElementById('modalDescription');
   const modalClose = document.getElementsByClassName('close')[0];
-  filterProducts('business');
+  filterProducts('finance');
   var loadingScreen = document.getElementById("loading-screen");
   loadingScreen.style.display = "none";
   products.forEach((product, index) => {
